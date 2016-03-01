@@ -47,11 +47,14 @@ html {
 body {
   font: 1.8rem/2.2rem 'futura', sans-serif;
   border: solid 0.2rem #9B9B9B;
-  margin: .8rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
   -webkit-font-smoothing: antialiased; }
   @media screen and (max-width: 767px) {
     body {
-      margin: .2rem;
       font-size: 1.5rem;
       line-height: 1.8rem; } }
 
@@ -96,5 +99,3 @@ header img {
   display: block;
   width: 90%;
   max-width: 50rem; }
-header .tag {
-  display: none; }
