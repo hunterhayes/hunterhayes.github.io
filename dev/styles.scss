@@ -70,8 +70,18 @@ body {
   margin: .8rem;
   -webkit-font-smoothing: antialiased;
   @media screen and (max-width: $xs-max) {
-    margin: .2rem;  
+    margin: .2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
   }
+}
+section {
+  padding: 4rem;
+  max-width: 100rem;
+  
+}
+p {
+  margin-top: 2rem;
 }
 a {
   color: #505050;
@@ -81,6 +91,34 @@ a {
 }
 h1 {
 
+}
+h2 {
+  font: 4.4rem/5rem 'kaufmann', sans-serif;
+  position: relative;
+  color: $indigo;
+  @media screen and (max-width: $xs-max) {
+    font-size: 4rem;  
+  }
+  &:after {
+    content: '';
+    border-top: .2rem solid $indigo;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+  }
+  &.red {
+    color: $red;
+    &:after {
+      border-color: $red;
+    }
+  }
+  &.linen {
+    color: $linen;
+    &:after {
+      border-color: $linen;
+    }
+  }
 }
 
 /*  PAGE STYLES  */
@@ -92,6 +130,6 @@ header {
     max-width: 50rem;
   }
   .tag {
-    
+    display: none;
   }
 }
