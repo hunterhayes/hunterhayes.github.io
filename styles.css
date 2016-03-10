@@ -1,4 +1,25 @@
 /*  VARIABLES  */
+/*  ANIMATIONS  */
+@-webkit-keyframes scaleImage {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+@keyframes scaleImage {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 /*  FONTS  */
 @font-face {
   font-family: 'futura';
@@ -46,8 +67,6 @@ html {
 
 body {
   font: 1.8rem/2.2rem 'futura', sans-serif;
-  border: solid 0.2rem #9B9B9B;
-  margin: .8rem;
   -webkit-font-smoothing: antialiased; }
   @media screen and (max-width: 767px) {
     body {
@@ -58,6 +77,9 @@ body {
 section {
   padding: 4rem;
   max-width: 100rem; }
+  @media screen and (max-width: 767px) {
+    section {
+      padding: 2rem; } }
 
 p {
   margin-top: 2rem; }
@@ -70,13 +92,14 @@ a {
 h2 {
   font: 4.4rem/5rem 'kaufmann', sans-serif;
   position: relative;
-  color: #263248; }
+  color: #40465A; }
   @media screen and (max-width: 767px) {
     h2 {
-      font-size: 4rem; } }
+      font-size: 3.5rem;
+      line-height: 4.5rem; } }
   h2:after {
     content: '';
-    border-top: 0.2rem solid #263248;
+    border-top: 0.2rem solid #40465A;
     position: absolute;
     left: 0;
     right: 0;
@@ -92,9 +115,37 @@ h2 {
 
 /*  PAGE STYLES  */
 header img {
-  margin: 10% auto;
+  margin: 10% auto 4% auto;
   display: block;
   width: 90%;
   max-width: 50rem; }
 header .tag {
   display: none; }
+
+.imgZoom {
+  width: 96%;
+  margin-left: 2%;
+  position: relative;
+  overflow: hidden;
+  border: 1rem solid white;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg); }
+  @media screen and (max-width: 767px) {
+    .imgZoom {
+      border-width: .4rem; } }
+  .imgZoom img {
+    width: 100%;
+    -webkit-animation: scaleImage 30s ease-in-out infinite;
+            animation: scaleImage 30s ease-in-out infinite; }
+    @media screen and (max-width: 767px) {
+      .imgZoom img {
+        width: 200%;
+        margin-left: -50%; } }
+
+footer img {
+  margin: 0 auto 4% auto;
+  display: block;
+  width: 40%;
+  max-width: 24rem; }
