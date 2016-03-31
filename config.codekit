@@ -25,18 +25,20 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
+	"\/images\/TEMPimage.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 118201,
+		"inputAbbreviatedPath": "\/images\/TEMPimage.jpg",
+		"outputAbbreviatedPath": "\/images\/TEMPimage.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/README.md": {
 		"criticStyle": 0,
