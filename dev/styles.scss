@@ -72,55 +72,68 @@ html {
   }
 }
 body {
-  font: 1.8rem/2.2rem 'futura', sans-serif;
- // border: solid .2rem $linen;
- // margin: .8rem;
+  font: 1.8rem/2.4rem 'futura', sans-serif;
+  border: solid .2rem $linen;
+  margin: 1.2rem;
   -webkit-font-smoothing: antialiased;
   @media screen and (max-width: $xs-max) {
-    margin: .2rem;
+    margin: .5rem;
     font-size: 1.5rem;
-    line-height: 1.8rem;
+    line-height: 2.2rem;
+    border-width: .1rem;
   }
 }
 section {
   padding: 4rem;
-  max-width: 100rem;
+  max-width: 90rem;
+  margin: auto;
   @media screen and (max-width: $xs-max) {
     padding: 2rem;
   }
 }
 p {
   margin-top: 2rem;
+  &.noPad {
+    margin-top: .5rem;
+  }
 }
 a {
-  color: #505050;
+  color: $red;
   &:hover {
     text-decoration: underline;
   }
 }
-h1 {
-
+ul.list {
+  padding-top: .5rem;
+  padding-left: 4rem;
+  li {
+    list-style: circle;
+  }
 }
 h2 {
   font: 4.4rem/5rem 'kaufmann', sans-serif;
   position: relative;
-  color: $indigo;
+  color: $red;
   @media screen and (max-width: $xs-max) {
-    font-size: 3.5rem;
-    line-height: 4.5rem;
+    font-size: 3.2rem;
+    line-height: 3.5rem;
   }
   &:after {
     content: '';
-    border-top: .2rem solid $indigo;
+    border-top: .2rem solid $red;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 1rem;
+    @media screen and (max-width: $xs-max) {
+      bottom: .7rem;
+      border-width: .1rem;
+    }
   }
-  &.red {
-    color: $red;
+  &.indigo {
+    color: $indigo;
     &:after {
-      border-color: $red;
+      border-color: $indigo;
     }
   }
   &.linen {
@@ -130,11 +143,14 @@ h2 {
     }
   }
 }
+h3 {
+  margin-top: 4rem;
+}
 
 /*  PAGE STYLES  */
 header {
   img {
-    margin: 10% auto 4% auto;
+    margin: 10% auto 0 auto;
     display: block;
     width: 90%;
     max-width: 50rem;
@@ -144,8 +160,9 @@ header {
   }
 }
 .imgZoom {
-    width: 96%;
-    margin-left: 2%;
+    width: 95%;
+    max-width: 100rem;
+    margin: auto;
     position: relative;
     overflow: hidden;
     border: 1rem solid white;
@@ -154,6 +171,7 @@ header {
     transform: rotate(-1deg); // to change per image
     @media screen and (max-width: $xs-max) {
       border-width: .4rem;
+      width: 90%;
     }
     img {
       width: 100%;

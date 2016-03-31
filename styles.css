@@ -66,56 +66,75 @@ html {
       font-size: 12px; } }
 
 body {
-  font: 1.8rem/2.2rem 'futura', sans-serif;
+  font: 1.8rem/2.4rem 'futura', sans-serif;
+  border: solid 0.2rem #9B9B9B;
+  margin: 1.2rem;
   -webkit-font-smoothing: antialiased; }
   @media screen and (max-width: 767px) {
     body {
-      margin: .2rem;
+      margin: .5rem;
       font-size: 1.5rem;
-      line-height: 1.8rem; } }
+      line-height: 2.2rem;
+      border-width: .1rem; } }
 
 section {
   padding: 4rem;
-  max-width: 100rem; }
+  max-width: 90rem;
+  margin: auto; }
   @media screen and (max-width: 767px) {
     section {
       padding: 2rem; } }
 
 p {
   margin-top: 2rem; }
+  p.noPad {
+    margin-top: .5rem; }
 
 a {
-  color: #505050; }
+  color: #C51B0E; }
   a:hover {
     text-decoration: underline; }
+
+ul.list {
+  padding-top: .5rem;
+  padding-left: 4rem; }
+  ul.list li {
+    list-style: circle; }
 
 h2 {
   font: 4.4rem/5rem 'kaufmann', sans-serif;
   position: relative;
-  color: #40465A; }
+  color: #C51B0E; }
   @media screen and (max-width: 767px) {
     h2 {
-      font-size: 3.5rem;
-      line-height: 4.5rem; } }
+      font-size: 3.2rem;
+      line-height: 3.5rem; } }
   h2:after {
     content: '';
-    border-top: 0.2rem solid #40465A;
+    border-top: 0.2rem solid #C51B0E;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 1rem; }
-  h2.red {
-    color: #C51B0E; }
-    h2.red:after {
-      border-color: #C51B0E; }
+    @media screen and (max-width: 767px) {
+      h2:after {
+        bottom: .7rem;
+        border-width: .1rem; } }
+  h2.indigo {
+    color: #40465A; }
+    h2.indigo:after {
+      border-color: #40465A; }
   h2.linen {
     color: #9B9B9B; }
     h2.linen:after {
       border-color: #9B9B9B; }
 
+h3 {
+  margin-top: 4rem; }
+
 /*  PAGE STYLES  */
 header img {
-  margin: 10% auto 4% auto;
+  margin: 10% auto 0 auto;
   display: block;
   width: 90%;
   max-width: 50rem; }
@@ -123,8 +142,9 @@ header .tag {
   display: none; }
 
 .imgZoom {
-  width: 96%;
-  margin-left: 2%;
+  width: 95%;
+  max-width: 100rem;
+  margin: auto;
   position: relative;
   overflow: hidden;
   border: 1rem solid white;
@@ -134,7 +154,8 @@ header .tag {
           transform: rotate(-1deg); }
   @media screen and (max-width: 767px) {
     .imgZoom {
-      border-width: .4rem; } }
+      border-width: .4rem;
+      width: 90%; } }
   .imgZoom img {
     width: 100%;
     -webkit-animation: scaleImage 30s ease-in-out infinite;
