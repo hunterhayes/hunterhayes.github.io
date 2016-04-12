@@ -88,7 +88,7 @@ section {
 p {
   margin-top: 2rem; }
   p.noPad {
-    margin-top: 1rem; }
+    margin-top: 0; }
 
 a {
   color: #C51B0E; }
