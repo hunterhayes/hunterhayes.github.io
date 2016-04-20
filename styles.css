@@ -20,6 +20,26 @@
   100% {
     -webkit-transform: scale(1);
             transform: scale(1); } }
+@-webkit-keyframes scaleImage2 {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); } }
+@keyframes scaleImage2 {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); } }
 /*  FONTS  */
 @font-face {
   font-family: 'futura';
@@ -88,6 +108,10 @@ section {
 
 .wrap {
   width: 60%; }
+  @media screen and (max-width: 767px) {
+    .wrap {
+      float: none;
+      width: 100%; } }
 
 .left {
   float: left; }
@@ -181,30 +205,60 @@ header img {
     width: 100%;
     -webkit-animation: scaleImage 30s ease-in-out infinite;
             animation: scaleImage 30s ease-in-out infinite; }
-    @media screen and (max-width: 767px) {
-      .imgZoom img {
-        width: 200%;
-        margin-left: -50%; } }
+    .imgZoom img.alt {
+      -webkit-animation: scaleImage2 40s ease-in-out infinite;
+              animation: scaleImage2 40s ease-in-out infinite; }
 
 section.intro p {
   margin-bottom: 5rem; }
+  @media screen and (max-width: 767px) {
+    section.intro p {
+      margin-bottom: 2rem; } }
 section.intro .imgZoom {
-  width: 55%; }
+  width: 55%;
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg); }
   section.intro .imgZoom.right {
     width: 44%;
     -webkit-transform: rotate(2deg);
             transform: rotate(2deg); }
+    @media screen and (max-width: 767px) {
+      section.intro .imgZoom.right {
+        width: 80%;
+        margin-top: -1rem; } }
+  @media screen and (max-width: 767px) {
+    section.intro .imgZoom {
+      width: 90%; } }
+
+section.childcare .imgZoom {
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+  width: 30%; }
+@media screen and (max-width: 767px) {
+  section.childcare .imgZoom {
+    width: 80%;
+    margin: 0 auto 1rem auto;
+    float: none;
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg); } }
 
 section.stay .imgZoom {
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
   margin-top: 5rem; }
+  @media screen and (max-width: 767px) {
+    section.stay .imgZoom {
+      width: 90%;
+      margin-top: 1rem; } }
 
 section.wear .imgZoom {
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
   margin-left: 2%;
   width: 30%; }
+  @media screen and (max-width: 767px) {
+    section.wear .imgZoom {
+      width: 52%; } }
   section.wear .imgZoom.abha {
     float: right;
     margin-top: 4rem;
@@ -212,23 +266,41 @@ section.wear .imgZoom {
     width: 35%;
     -webkit-transform: rotate(-3deg);
             transform: rotate(-3deg); }
+    @media screen and (max-width: 767px) {
+      section.wear .imgZoom.abha {
+        left: 0;
+        width: 65%; } }
 
 section.gettingTo .imgZoom {
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
   margin-top: 2rem;
   width: 30%; }
+  @media screen and (max-width: 767px) {
+    section.gettingTo .imgZoom {
+      width: 68%;
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+      margin-left: 8%; } }
 section.gettingTo .wrap {
   width: 65%; }
+  @media screen and (max-width: 767px) {
+    section.gettingTo .wrap {
+      width: 100%; } }
 
 section.sights .imgZoom {
   -webkit-transform: rotate(-1deg);
           transform: rotate(-1deg);
   width: 32%;
   margin-left: 8%; }
+  @media screen and (max-width: 767px) {
+    section.sights .imgZoom {
+      width: 78%;
+      -webkit-transform: rotate(5deg);
+              transform: rotate(5deg); } }
 
 footer img {
   margin: 0 auto 4% auto;
   display: block;
-  width: 40%;
-  max-width: 24rem; }
+  width: 60%;
+  max-width: 28rem; }
