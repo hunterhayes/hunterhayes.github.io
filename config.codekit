@@ -62,16 +62,102 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/TEMPimage.jpg": {
+	"\/images\/childcare.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 118201,
-		"inputAbbreviatedPath": "\/images\/TEMPimage.jpg",
-		"outputAbbreviatedPath": "\/images\/TEMPimage.jpg",
+		"initialSize": 276463,
+		"inputAbbreviatedPath": "\/images\/childcare.jpg",
+		"outputAbbreviatedPath": "\/images\/childcare.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/images\/gettingTo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 122069,
+		"inputAbbreviatedPath": "\/images\/gettingTo.jpg",
+		"outputAbbreviatedPath": "\/images\/gettingTo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/introAbha.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 92229,
+		"inputAbbreviatedPath": "\/images\/introAbha.jpg",
+		"outputAbbreviatedPath": "\/images\/introAbha.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/introHunter.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 199779,
+		"inputAbbreviatedPath": "\/images\/introHunter.jpg",
+		"outputAbbreviatedPath": "\/images\/introHunter.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/sights.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 79388,
+		"inputAbbreviatedPath": "\/images\/sights.jpg",
+		"outputAbbreviatedPath": "\/images\/sights.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/stay.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71234,
+		"inputAbbreviatedPath": "\/images\/stay.jpg",
+		"outputAbbreviatedPath": "\/images\/stay.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wearAbha.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 118780,
+		"inputAbbreviatedPath": "\/images\/wearAbha.jpg",
+		"outputAbbreviatedPath": "\/images\/wearAbha.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wearHunter.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 94433,
+		"inputAbbreviatedPath": "\/images\/wearHunter.jpg",
+		"outputAbbreviatedPath": "\/images\/wearHunter.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/README.md": {
 		"criticStyle": 0,
