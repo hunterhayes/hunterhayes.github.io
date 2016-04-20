@@ -14,6 +14,11 @@ $xl-min:      1400px;
     50% {transform: scale(1.2);}
     100% {transform: scale(1.0);}
 }
+@keyframes scaleImage2 {
+    0% {transform: scale(1.2);}
+    50% {transform: scale(1.0);}
+    100% {transform: scale(1.2);}
+}
 
 /*  FONTS  */
 @font-face {
@@ -94,6 +99,10 @@ section {
 }
 .wrap {
   width: 60%;
+  @media screen and (max-width: $xs-max) {
+    float: none;
+    width: 100%;
+  }
 }
 .left {
   float: left;
@@ -194,24 +203,49 @@ header {
     &.vert {
       width: 35%;
       margin-right: 3%;
+      
     }
     img {
       width: 100%;
       animation: scaleImage 30s ease-in-out infinite;
-      @media screen and (max-width: $xs-max) {
-        width: 200%;
-        margin-left: -50%;
+      &.alt {
+        animation: scaleImage2 40s ease-in-out infinite;
       }
     }
 }
 section.intro {
   p {
     margin-bottom: 5rem;
+    @media screen and (max-width: $xs-max) {
+      margin-bottom: 2rem;
+    }
   }
   .imgZoom {
     width: 55%;
+    transform: rotate(-1deg);
     &.right {
       width: 44%;
+      transform: rotate(2deg);
+      @media screen and (max-width: $xs-max) {
+        width: 80%;
+        margin-top: -1rem;
+      }
+    }
+    @media screen and (max-width: $xs-max) {
+      width: 90%;
+    }
+  }
+}
+section.childcare {
+  .imgZoom {
+    transform: rotate(1deg);
+    width: 30%;
+  }
+  @media screen and (max-width: $xs-max) {
+    .imgZoom {
+      width: 80%;
+      margin: 0 auto 1rem auto;
+      float: none;
       transform: rotate(2deg);
     }
   }
@@ -220,6 +254,10 @@ section.stay {
   .imgZoom {
     transform: rotate(-3deg);
     margin-top: 5rem;
+    @media screen and (max-width: $xs-max) {
+      width: 90%;
+      margin-top: 1rem; 
+    }
   }
 }
 section.wear {
@@ -227,12 +265,19 @@ section.wear {
     transform: rotate(2deg);
     margin-left: 2%;
     width: 30%;
+    @media screen and (max-width: $xs-max) {
+      width: 52%;
+    }
     &.abha {
       float: right;
       margin-top: 4rem;
       left: 7rem;
       width: 35%;
       transform: rotate(-3deg);
+      @media screen and (max-width: $xs-max) {
+        left: 0;
+        width: 65%;
+      }
     }
   }
 }
@@ -241,9 +286,17 @@ section.gettingTo {
     transform: rotate(2deg);
     margin-top: 2rem;
     width: 30%;
+    @media screen and (max-width: $xs-max) {
+      width: 68%;
+      transform: rotate(-4deg);
+      margin-left: 8%;
+    }
   }
   .wrap {
     width: 65%;
+    @media screen and (max-width: $xs-max) {
+      width: 100%;
+    }
   }
 }
 section.sights {
@@ -251,6 +304,10 @@ section.sights {
     transform: rotate(-1deg);
     width: 32%;
     margin-left: 8%;
+    @media screen and (max-width: $xs-max) {
+      width: 78%;
+      transform: rotate(5deg);    
+    }
   }
 }
 
@@ -258,7 +315,7 @@ footer {
   img {
     margin: 0 auto 4% auto;
     display: block;
-    width: 40%;
-    max-width: 24rem;
+    width: 60%;
+    max-width: 28rem;
   }
 }
