@@ -87,9 +87,19 @@ section {
   padding: 4rem;
   max-width: 90rem;
   margin: auto;
+  clear: both;
   @media screen and (max-width: $xs-max) {
     padding: 2rem;
   }
+}
+.wrap {
+  width: 60%;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
 }
 p {
   margin-top: 2rem;
@@ -176,10 +186,14 @@ header {
     border: 1rem solid white;
     box-shadow: 0 .2rem .5rem rgba(0,0,0,.1);
     box-sizing: border-box;
-    transform: rotate(-1deg); // to change per image
+    z-index: 1;
     @media screen and (max-width: $xs-max) {
       border-width: .4rem;
       width: 90%;
+    }
+    &.vert {
+      width: 35%;
+      margin-right: 3%;
     }
     img {
       width: 100%;
@@ -190,6 +204,56 @@ header {
       }
     }
 }
+section.intro {
+  p {
+    margin-bottom: 5rem;
+  }
+  .imgZoom {
+    width: 55%;
+    &.right {
+      width: 44%;
+      transform: rotate(2deg);
+    }
+  }
+}
+section.stay {
+  .imgZoom {
+    transform: rotate(-3deg);
+    margin-top: 5rem;
+  }
+}
+section.wear {
+  .imgZoom {
+    transform: rotate(2deg);
+    margin-left: 2%;
+    width: 30%;
+    &.abha {
+      float: right;
+      margin-top: 4rem;
+      left: 7rem;
+      width: 35%;
+      transform: rotate(-3deg);
+    }
+  }
+}
+section.gettingTo {
+  .imgZoom {
+    transform: rotate(2deg);
+    margin-top: 2rem;
+    width: 30%;
+  }
+  .wrap {
+    width: 65%;
+  }
+}
+section.sights {
+  .imgZoom {
+    transform: rotate(-1deg);
+    width: 32%;
+    margin-left: 8%;
+  }
+}
+
 footer {
   img {
     margin: 0 auto 4% auto;

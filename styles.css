@@ -80,10 +80,20 @@ body {
 section {
   padding: 4rem;
   max-width: 90rem;
-  margin: auto; }
+  margin: auto;
+  clear: both; }
   @media screen and (max-width: 767px) {
     section {
       padding: 2rem; } }
+
+.wrap {
+  width: 60%; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
 
 p {
   margin-top: 2rem; }
@@ -159,12 +169,14 @@ header img {
   border: 1rem solid white;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  -webkit-transform: rotate(-1deg);
-          transform: rotate(-1deg); }
+  z-index: 1; }
   @media screen and (max-width: 767px) {
     .imgZoom {
       border-width: .4rem;
       width: 90%; } }
+  .imgZoom.vert {
+    width: 35%;
+    margin-right: 3%; }
   .imgZoom img {
     width: 100%;
     -webkit-animation: scaleImage 30s ease-in-out infinite;
@@ -173,6 +185,47 @@ header img {
       .imgZoom img {
         width: 200%;
         margin-left: -50%; } }
+
+section.intro p {
+  margin-bottom: 5rem; }
+section.intro .imgZoom {
+  width: 55%; }
+  section.intro .imgZoom.right {
+    width: 44%;
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg); }
+
+section.stay .imgZoom {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  margin-top: 5rem; }
+
+section.wear .imgZoom {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  margin-left: 2%;
+  width: 30%; }
+  section.wear .imgZoom.abha {
+    float: right;
+    margin-top: 4rem;
+    left: 7rem;
+    width: 35%;
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg); }
+
+section.gettingTo .imgZoom {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  margin-top: 2rem;
+  width: 30%; }
+section.gettingTo .wrap {
+  width: 65%; }
+
+section.sights .imgZoom {
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+  width: 32%;
+  margin-left: 8%; }
 
 footer img {
   margin: 0 auto 4% auto;
