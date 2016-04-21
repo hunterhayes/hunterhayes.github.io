@@ -170,12 +170,19 @@ h3 {
   font-size: 2rem;
   line-height: 2.4rem;
   text-transform: uppercase; }
+  @media screen and (max-width: 767px) {
+    h3 {
+      font-size: 1.8rem;
+      line-height: 2rem; } }
 
 h4 {
   font-weight: normal;
   font-style: italic;
   color: #40465A;
   font-size: 1.8rem; }
+  @media screen and (max-width: 767px) {
+    h4 {
+      font-size: 1.6rem; } }
 
 /*  PAGE STYLES  */
 header img {

@@ -4,7 +4,6 @@ $linen:       #9B9B9B;
 $red:         #C51B0E;
 $indigo:      #40465A;
 $ink:         #000000;
-
 $xs-max:      767px;
 $xl-min:      1400px;
 
@@ -169,12 +168,19 @@ h3 {
   font-size: 2rem;
   line-height: 2.4rem;
   text-transform: uppercase;
+  @media screen and (max-width: $xs-max) {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
 }
 h4 {
   font-weight: normal;
   font-style: italic;
   color: $indigo;
   font-size: 1.8rem;
+  @media screen and (max-width: $xs-max) {
+    font-size: 1.6rem;
+  }
 }
 
 /*  PAGE STYLES  */
